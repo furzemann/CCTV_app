@@ -1,28 +1,13 @@
-# Core dependencies 
+# Core dependencies
 streamlit>=1.56.0
 pandas>=2.3.3
+numpy>=2.0.1
 
 # Computer vision and video processing
-opencv-python-headles
-snumpy>=2.0.1
+opencv-python-headless
 
-# Deep learning — detection and feature extraction
+# Deep learning
 ultralytics>=8.4.37
 
 # Tracking algorithm
 scipy>=1.15.3
-
-# ==========================================
-# PyTorch Installation Details (CPU vs GPU)
-# ==========================================
-# Because PyTorch installation depends strictly on your hardware and CUDA drivers, 
-# you should install it manually before installing the rest of the file.
-
-# Option A: CPU-Only Environment (e.g. your 'cctv' env)
-# Run this if you don't have an NVIDIA GPU or just want to test locally:
-# pip install torch torchvision --index-url https://download.pytorch.org/whl/cpu
-
-# Option B: GPU Environment (e.g. your 'cctv_gpu' env)
-# Run this to leverage NVIDIA CUDA libraries for significantly faster processing.
-# (Based on your cctv_gpu env, CUDA 12.1 is used)
-# pip install torch==2.5.1 torchvision==0.20.1 --index-url https://download.pytorch.org/whl/cu121
